@@ -152,12 +152,19 @@ public class RaumverwaltungsPanel extends JPanel {
         kapaText.setText(bearbeiteterRaumDaten[1]);
 
         if (bearbeiteterRaumDaten[2].equals("true")) chckbxBuchbar.setSelected(true);
+        else chckbxBuchbar.setSelected(false);
         if (bearbeiteterRaumDaten[3].equals("true")) chckbxBeamer.setSelected(true);
+        else chckbxBeamer.setSelected(false);
         if (bearbeiteterRaumDaten[4].equals("true")) chckbxOhp.setSelected(true);
+        else chckbxOhp.setSelected(false);
         if (bearbeiteterRaumDaten[5].equals("true")) chckbxTafel.setSelected(true);
+        else chckbxTafel.setSelected(false);
         if (bearbeiteterRaumDaten[6].equals("true")) chckbxSmartboard.setSelected(true);
+        else chckbxSmartboard.setSelected(false);
         if (bearbeiteterRaumDaten[7].equals("true")) chckbxWhiteboard.setSelected(true);
+        else chckbxWhiteboard.setSelected(false);
         if (bearbeiteterRaumDaten[8].equals("true")) chckbxComputerraum.setSelected(true);
+        else chckbxComputerraum.setSelected(false);
     }
 
     private ListCellRenderer<? super String> getRenderer() {

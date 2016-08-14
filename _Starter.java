@@ -54,6 +54,12 @@ public class _Starter {
             System.out.println("Soll der Raumfinder vor dem Start die bestehende Raumbelegung seitens der HWR-Verwaltung\naus dem Internet herunterladen? (Y|N)");
             while (!(eingabe[0].equalsIgnoreCase("y")||eingabe[0].equalsIgnoreCase("n"))) eingabe[0] = din.readLine();
             if (eingabe[0].equalsIgnoreCase("y")) einlesen = true;
+        } else {
+            firstStart = false;
+            System.out.println("Erneut Online-Einlesen?");
+            eingabe[1] = din.readLine();
+            while (!(eingabe[0].equalsIgnoreCase("y")||eingabe[0].equalsIgnoreCase("n"))) eingabe[0] = din.readLine();
+            if (eingabe[0].equalsIgnoreCase("y")) einlesen = true;
         }
 
         starteHWRaumfinder();

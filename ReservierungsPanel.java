@@ -64,11 +64,13 @@ public class ReservierungsPanel extends JPanel {
         //}
         today=c1;
         today.set(Calendar.HOUR_OF_DAY, 19);
+        today.set(Calendar.MINUTE, 45);
         if (c1.after(today)||c2.after(today)) {
             c1.set(Calendar.HOUR_OF_DAY, 8);
             c2.set(Calendar.HOUR_OF_DAY, 9);
         }
         today.set(Calendar.HOUR_OF_DAY, 8);
+        today.set(Calendar.MINUTE, 0);
         if (c1.before(today)||c2.before(today)) {
             c1.set(Calendar.HOUR_OF_DAY, 8);
             c2.set(Calendar.HOUR_OF_DAY, 9);
