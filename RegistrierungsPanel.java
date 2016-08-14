@@ -35,14 +35,14 @@ import java.awt.event.ActionEvent;
  *	</li>
  *	<li>
  *		<ul>
- *			<li> <strong> Version: </strong> 2.2 </li>
+ *			<li> <strong> Version: </strong> 2.1 </li>
  *			<li> <strong> Datum: </strong> 12.08.16 </li>
  *			<li> <strong> Autor: </strong> Hanna Behnke </li>
  * 			<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li>
  *		</ul>
  *	</li>
  * </ol>
- * @version 2.2
+ * @version 2.1
  * @author Alexander Reichenbach
  *
  */
