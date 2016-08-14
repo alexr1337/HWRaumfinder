@@ -9,7 +9,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 
 /**
- * <strong>Zweck:</strong> Definiert Design und Funktionalitäten des Login-Panels
+ * <strong> Zweck: </strong> Definiert Design und Funktionalitaeten des Login-Panels
  * <h2>Aenderungshistorie:</h2>
  * <ol>
  * 	<li>
