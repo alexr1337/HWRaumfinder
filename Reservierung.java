@@ -6,9 +6,86 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * <strong>Zweck:</strong> Ermöglicht die Erstellung von Reservierungsobjekten, denen eine eindeutige Reservierungsnummer sowie ein Zeitraum, ein Reservierer und ein Raum zugeordnet sind.
- * <p><strong>Änderungshistorie:</strong></p>
- * @version 3.4
+ * <strong> Zweck:</strong> Ermoeglicht die Erstellung von Reservierungsobjekten, denen eine eindeutige Reservierungsnummer 
+ * sowie ein Zeitraum, ein Reservierer und ein Raum zugeordnet sind.
+ * <h2>Aenderungshistorie:</h2>
+ * 
+ * <ol>
+ * 	<li>
+ * 		<ul>
+ * 			<li> <strong> Version: </strong> 1.0 </li>
+ *			<li> <strong> Datum: </strong> 25.06.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Initiale Befuellung </li>
+ *		 </ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.1 </li>
+ *			<li> <strong> Datum: </strong> 11.07.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ *			<li> <strong> Beschreibung: </strong> Update Reservierungsnummer </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.2 </li>
+ *			<li> <strong> Datum: </strong> 28.07.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Package Verarbeitung hinzugefuegt </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.3 </li>
+ *			<li> <strong> Datum: </strong> 02.08.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Implements Serializable </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.0 </li>
+ *			<li> <strong> Datum: </strong> 06.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Major Update </li>
+ *		</ul>
+ *	</li>
+ * 	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.1 </li>
+ *			<li> <strong> Datum: </strong> 07.08.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Update Getter/Setter für resCounter </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.2 </li>
+ *			<li> <strong> Datum: </strong> 11.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Interfaces implementiert </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.3 </li>
+ *			<li> <strong> Datum: </strong> 12.08.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li>
+ *		</ul>
+ *	</li>
+
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.4 </li>
+ *			<li> <strong> Datum: </strong> 13.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Bug Fixes </li>
+ *		</ul>
+ *	</li>
+ * </ol>
+ * @version 2.4
  * @author Alexander Reichenbach
  *
  */
