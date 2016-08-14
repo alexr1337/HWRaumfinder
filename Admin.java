@@ -10,7 +10,7 @@ package Verarbeitung;
  * 			<li> <strong> Version: </strong> 1.0 </li>
  *			<li> <strong> Datum: </strong> 11.07.16 </li>
  *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Initiale Befuellung </li>
+ * 			<li> <strong> Beschreibung: </strong> Initielle Befuellung </li>
  *		 </ul>
  *	</li>
  *	<li>
@@ -26,7 +26,7 @@ package Verarbeitung;
  *			<li> <strong> Version: </strong> 2.0 </li>
  *			<li> <strong> Datum: </strong> 07.08.16 </li>
  *			<li> <strong> Autor: </strong> Hanna Behnke </li>
- * 			<li> <strong> Beschreibung: </strong> Finales Update </li>
+ * 			<li> <strong> Beschreibung: </strong> Major Update </li>
  *		</ul>
  *	</li>
  *	<li>
