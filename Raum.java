@@ -6,8 +6,84 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- * <strong>Zweck:</strong> Ermöglicht die Erstellung von Raum-Objekten, denen ein Name, eine bestimmte Ausstattung sowie Informationen über Buchbarkeit und Belegung zugeordnet sind. 
- * <p><strong>Änderungshistorie:</strong></p>
+ * <strong> Zweck: </strong> Ermoeglicht die Erstellung von Raum-Objekten, denen ein Name, eine bestimmte Ausstattung,
+ * sowie Informationen ueber Buchbarkeit und Belegung zugeordnet sind. 
+ * <h2>Aenderungshistorie:</h2>
+ * 
+ * <ol>
+ * 	<li>
+ * 		<ul>
+ * 			<li> <strong> Version: </strong> 1.0 </li>
+ *			<li> <strong> Datum: </strong> 25.06.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Initiale Befuellung </li>
+ *		 </ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.1 </li>
+ *			<li> <strong> Datum: </strong> 11.07.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Kapazitaet entfernt und zu Ausstattung bewegt </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.2 </li>
+ *			<li> <strong> Datum: </strong> 12.07.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> istFrei und Kapazitaet- Fixes </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.3 </li>
+ *			<li> <strong> Datum: </strong> 28.07.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Package Verarbeitung hinzugefuegt </li>
+ *		</ul>
+ *	</li>
+ *  *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.4 </li>
+ *			<li> <strong> Datum: </strong> 02.08.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Raum implements Serializable hinzugefuegt </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.0 </li>
+ *			<li> <strong> Datum: </strong> 06.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Finales Update </li>
+ *		</ul>
+ *	</li>
+ *  *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.1 </li>
+ *			<li> <strong> Datum: </strong> 11.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Implementieren der Interfaces </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.2 </li>
+ *			<li> <strong> Datum: </strong> 12.08.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.3 </li>
+ *			<li> <strong> Datum: </strong> 14.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Bug Fixes </li>
+ *		</ul>
+ *	</li>
+ * </ol>
  * @version 3.2
  * @author Alexander Reichenbach
  *
