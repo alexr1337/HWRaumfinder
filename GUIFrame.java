@@ -15,9 +15,59 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * <strong>Zweck:</strong>  Koordination der verschiedenen Ansichten der Benutzeroberfläche und Schnittstelle zur Verarbeitungsschicht
- * <p><strong>Änderungshistorie:</strong></p>
- * @version 2.5
+ * <strong> Zweck: </strong>  Koordination der verschiedenen Ansichten der Benutzeroberflaeche und Schnittstelle zur Verarbeitungsschicht
+ * <h2>Aenderungshistorie:</h2>
+ * <ol>
+ * 	<li>
+ * 		<ul>
+ * 			<li> <strong> Version: </strong> 1.0 </li>
+ *			<li> <strong> Datum: </strong> 06.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Erstellung </li>
+ *		 </ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.0 </li>
+ *			<li> <strong> Datum: </strong> 10.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Major Update </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.1 </li>
+ *			<li> <strong> Datum: </strong> 11.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Bug Fixes </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.2 </li>
+ *			<li> <strong> Datum: </strong> 12.08.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.3 </li>
+ *			<li> <strong> Datum: </strong> 12.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Bug Fixes </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.4 </li>
+ *			<li> <strong> Datum: </strong> 13.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Minor Bug Fixes </li>
+ *		</ul>
+ *	</li>
+ * </ol>
+ * @version 2.4
  * @author Alexander Reichenbach
  *
  */
