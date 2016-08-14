@@ -7,7 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * <strong>Zweck:</strong> Definiert Design und Funktionalitäten des Passwortänderungs-Panels
+ * <strong> Zweck: </strong> Definiert Design und Funktionalitaeten des Passwortaenderungs-Panels
  * <h2>Aenderungshistorie:</h2>
  * <ol>
  * 	<li>
