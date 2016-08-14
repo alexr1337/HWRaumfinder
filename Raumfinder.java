@@ -9,9 +9,105 @@ import java.util.Date;
 import java.util.concurrent.ConcurrentSkipListMap;
 
 /**
- * <strong>Zweck:</strong> <ul> <li>Verwaltet Gesamtlisten der Nutzer, Räume und Reservierungen und koordiniert Änderunen an diesen</li>
- *                              <li>Zugriff auf Persistenzschichz</li></ul>
- * @version 3.4
+ * <strong> Zweck:</strong> 
+ *  <ul> 
+ *      <li>Verwaltet Gesamtlisten der Nutzer, Raeume und Reservierungen und koordiniert Änderungen an diesen </li>
+ *      <li>Zugriff auf Persistenzschicht </li>
+ *  </ul>
+ * <h2>Aenderungshistorie:</h2>
+ * 
+ * <ol>
+ * 		<li>
+ * 			<ul>
+ * 				<li> <strong> Version: </strong> 1.0 </li>
+ *				<li> <strong> Datum: </strong> 25.06.16 </li>
+ *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 				<li> <strong> Beschreibung: </strong> Initiale Befuellung </li>
+ *			 </ul>
+ *		</li>
+ *		<li>
+ *			<ul>
+ *				<li> <strong> Version: </strong> 1.1 </li>
+ *				<li> <strong> Datum: </strong> 11.07.16 </li>
+ *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 				<li> <strong> Beschreibung: </strong> Update: Raumfinder-Suche </li>
+ *			</ul>
+ *		</li>
+ *		<li>
+ *			<ul>
+ *				<li> <strong> Version: </strong> 1.2 </li>
+ *				<li> <strong> Datum: </strong> 21.07.16 </li>
+ *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 				<li> <strong> Beschreibung: </strong> reservieren und addReservierung hinzugefuegt </li>
+ *			</ul>
+ *		</li>
+ *		<li>
+ *			<ul>
+ *				<li> <strong> Version: </strong> 2.0 </li>
+ *				<li> <strong> Datum: </strong> 13.07.16 </li>
+ *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 				<li> <strong> Beschreibung: </strong> Update: Major Update </li>
+ *			</ul>
+ *		</li>
+ *		<li>
+ *			<ul>
+ *				<li> <strong> Version: </strong> 2.1 </li>
+ *				<li> <strong> Datum: </strong> 02.08.16 </li>
+ *				<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 				<li> <strong> Beschreibung: </strong> save()- und load()-Methoden hinzugefuegt </li>
+ *			</ul>
+ *		</li>
+ *		<li>
+ *			<ul>
+ *				<li> <strong> Version: </strong> 2.2 </li>
+ *				<li> <strong> Datum: </strong> 11.08.16 </li>
+ *				<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 				<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li>
+ *			</ul>
+ *		</li>
+ *		<li>
+ *			<ul>
+ *				<li> <strong> Version: </strong> 2.3 </li>
+ *				<li> <strong> Datum: </strong> 07.08.16 </li>
+ *				<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 				<li> <strong> Beschreibung: </strong> Getter und Setter ResCounter hinzugefuegt </li>
+ *			</ul>
+ *		</li>
+ *  	<li>
+ *			<ul>
+ *				<li> <strong> Version: </strong> 3.0 </li>
+ *				<li> <strong> Datum: </strong> 10.08.16 </li>
+ *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 				<li> <strong> Beschreibung: </strong> Finales Update </li>
+ *			</ul>
+ *		</li>
+ *		<li>
+ *			<ul>
+ *				<li> <strong> Version: </strong> 3.1 </li>
+ *				<li> <strong> Datum: </strong> 11.08.16 </li>
+ *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 				<li> <strong> Beschreibung: </strong> Bug Fixes </li>
+ *			</ul>
+ *		</li>
+ *  *		<li>
+ *			<ul>
+ *				<li> <strong> Version: </strong> 3.2 </li>
+ *				<li> <strong> Datum: </strong> 12.08.16 </li>
+ *				<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 				<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikation </li>
+ *			</ul>
+ *		</li> 
+ *		<li>
+ *			<ul>
+ *				<li> <strong> Version: </strong> 3.3 </li>
+ *				<li> <strong> Datum: </strong> 14.08.16 </li>
+ *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 				<li> <strong> Beschreibung: </strong> Bug Fixes </li>
+ *			</ul>
+ *		</li>
+ *
+ * </ol>
+ * @version 3.3
  * @author Alexander Reichenbach
  *
  */
