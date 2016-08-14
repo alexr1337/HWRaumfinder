@@ -10,7 +10,7 @@ package Verarbeitung;
  * 			<li> <strong> Version: </strong> 1.0 </li>
  *			<li> <strong> Datum: </strong> 11.07.16 </li>
  *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Initielle Befuellung </li>
+ * 			<li> <strong> Beschreibung: </strong> Initiale Befuellung </li>
  *		 </ul>
  *	</li>
  *	<li>
