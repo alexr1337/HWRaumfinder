@@ -6,13 +6,66 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- * <strong/>Zweck:</strong> Ermöglicht das Erstellen von StandardNutzer-Objekten, denen, im Gegensatz zu Objekten der Mutterklasse "Nutzer", Reservierungen zugeorndet werden können. Diese werden als Liste gespeichert.
- * <p><strong>Änderungshistorie:</strong> </p>
+ * <strong> Zweck: </strong> Ermoeglicht das Erstellen von StandardNutzer-Objekten, denen, im Gegensatz zu Objekten der Mutterklasse "Nutzer", 
+ * Reservierungen zugeordnet werden können. Diese werden als Liste gespeichert.
+ * <h2>Aenderungshistorie:</h2>
+ * 
+ * <ol>
+ * 	<li>
+ * 		<ul>
+ * 			<li> <strong> Version: </strong> 1.0 </li>
+ *			<li> <strong> Datum: </strong> 11.07.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Initiale Befuellung </li>
+ *		 </ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.1 </li>
+ *			<li> <strong> Datum: </strong> 28.07.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Package Verarbeitung hinzugefuegt </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.0 </li>
+ *			<li> <strong> Datum: </strong> 06.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Major Update </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.1 </li>
+ *			<li> <strong> Datum: </strong> 11.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Interfaces implementiert </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.2 </li>
+ *			<li> <strong> Datum: </strong> 12.08.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li>
+ *		</ul>
+ *	</li>
+
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.3 </li>
+ *			<li> <strong> Datum: </strong> 12.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Bug Fixes </li>
+ *		</ul>
+ *	</li>
+ * </ol>
  * @version 2.3
  * @author Alexander Reichenbach
  *
  */
-
+ 
 public class StandardNutzer extends Nutzer implements VerarbeitungInterfaces.StandardNutzerIF, Reservierer, Serializable {
 
    // Attribute
