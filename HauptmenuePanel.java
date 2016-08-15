@@ -10,9 +10,51 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 
 /**
- * <strong>Zweck:</strong> Definiert Design und Funktionalitäten des Hauptmenü-Panels
- * <p><strong>Änderungshistorie:</strong></p>
- * @version 2.4
+ * <strong> Zweck:</strong> Definiert Design und Funktionalitaeten des Hauptmenue-Panels
+ * <h2>Aenderungshistorie:</h2>
+ * <ol>
+ * 	<li>
+ * 		<ul>
+ * 			<li> <strong> Version: </strong> 1.0 </li>
+ *			<li> <strong> Datum: </strong> 06.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Erstellung </li>
+ *		 </ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.1 </li>
+ *			<li> <strong> Datum: </strong> 10.08.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong>  Entwurf Design </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.2 </li>
+ *			<li> <strong> Datum: </strong> 11.08.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Überarbeitung Design </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.0 </li>
+ *			<li> <strong> Datum: </strong> 12.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> ActionListener und Verknüpfung mit Frame </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.1 </li>
+ *			<li> <strong> Datum: </strong> 12.08.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Unit-Spezifikation </li>
+ *		</ul>
+ *	</li>
+ * </ol>
+ * @version 2.1
  * @author Alexander Reichenbach
  *
  */
