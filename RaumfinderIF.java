@@ -15,7 +15,8 @@ public interface RaumfinderIF {
     boolean pruefeBuchbarkeitRaum(String raumKennung);
     void addRaum(Raum a);
     void addRaum (String raumKennung, boolean beamer, boolean ohp, boolean tafel, boolean smartb, boolean whiteb, boolean computerr, int kapazitaet, boolean admin);
-        void loescheRaum(Raum a);
+    void loescheRaum(Raum a);
+    void sortiereRaumNeuEin (Raum a);
     ArrayList<Raum> getRaeume();
     void setRaeume(ArrayList<Raum> raeume);
 
@@ -36,6 +37,7 @@ public interface RaumfinderIF {
     void legeNutzerAn(String name, String password, String sicherheitsFrage, String sicherheitsAntwort, boolean admin);
     boolean loescheNutzer(Nutzer n);
     void addNutzer(Nutzer n);
+    void sortiereNutzerNeuEin (Nutzer n);
     ArrayList<Nutzer> getNutzer();
     void setNutzer(ArrayList<Nutzer> nutzer);
     String[] getNutzerString();

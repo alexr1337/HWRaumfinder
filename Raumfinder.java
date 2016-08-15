@@ -1,4 +1,4 @@
-package Verarbeitung;
+﻿package Verarbeitung;
 
 import Persistenz.*;
 import VerarbeitungInterfaces.RaumfinderIF;
@@ -8,109 +8,110 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.concurrent.ConcurrentSkipListMap;
 
-/**
- * <strong> Zweck:</strong> 
- *  <ul> 
- *      <li>Verwaltet Gesamtlisten der Nutzer, Raeume und Reservierungen und koordiniert Änderungen an diesen </li>
- *      <li>Zugriff auf Persistenzschicht </li>
- *  </ul>
- * <h2>Aenderungshistorie:</h2>
- * 
- * <ol>
- * 		<li>
- * 			<ul>
- * 				<li> <strong> Version: </strong> 1.0 </li>
- *				<li> <strong> Datum: </strong> 25.06.16 </li>
- *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 				<li> <strong> Beschreibung: </strong> Initiale Befuellung </li>
- *			 </ul>
- *		</li>
- *		<li>
- *			<ul>
- *				<li> <strong> Version: </strong> 1.1 </li>
- *				<li> <strong> Datum: </strong> 11.07.16 </li>
- *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 				<li> <strong> Beschreibung: </strong> Update: Raumfinder-Suche </li>
- *			</ul>
- *		</li>
- *		<li>
- *			<ul>
- *				<li> <strong> Version: </strong> 1.2 </li>
- *				<li> <strong> Datum: </strong> 21.07.16 </li>
- *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 				<li> <strong> Beschreibung: </strong> reservieren und addReservierung hinzugefuegt </li>
- *			</ul>
- *		</li>
- *		<li>
- *			<ul>
- *				<li> <strong> Version: </strong> 2.0 </li>
- *				<li> <strong> Datum: </strong> 13.07.16 </li>
- *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 				<li> <strong> Beschreibung: </strong> Update: Major Update </li>
- *			</ul>
- *		</li>
- *		<li>
- *			<ul>
- *				<li> <strong> Version: </strong> 2.1 </li>
- *				<li> <strong> Datum: </strong> 02.08.16 </li>
- *				<li> <strong> Autor: </strong> Hanna Behnke </li>
- * 				<li> <strong> Beschreibung: </strong> save()- und load()-Methoden hinzugefuegt </li>
- *			</ul>
- *		</li>
- *		<li>
- *			<ul>
- *				<li> <strong> Version: </strong> 2.2 </li>
- *				<li> <strong> Datum: </strong> 11.08.16 </li>
- *				<li> <strong> Autor: </strong> Hanna Behnke </li>
- * 				<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li>
- *			</ul>
- *		</li>
- *		<li>
- *			<ul>
- *				<li> <strong> Version: </strong> 2.3 </li>
- *				<li> <strong> Datum: </strong> 07.08.16 </li>
- *				<li> <strong> Autor: </strong> Hanna Behnke </li>
- * 				<li> <strong> Beschreibung: </strong> Getter und Setter ResCounter hinzugefuegt </li>
- *			</ul>
- *		</li>
- *  	<li>
- *			<ul>
- *				<li> <strong> Version: </strong> 3.0 </li>
- *				<li> <strong> Datum: </strong> 10.08.16 </li>
- *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 				<li> <strong> Beschreibung: </strong> Finales Update </li>
- *			</ul>
- *		</li>
- *		<li>
- *			<ul>
- *				<li> <strong> Version: </strong> 3.1 </li>
- *				<li> <strong> Datum: </strong> 11.08.16 </li>
- *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 				<li> <strong> Beschreibung: </strong> Bug Fixes </li>
- *			</ul>
- *		</li>
- *  *		<li>
- *			<ul>
- *				<li> <strong> Version: </strong> 3.2 </li>
- *				<li> <strong> Datum: </strong> 12.08.16 </li>
- *				<li> <strong> Autor: </strong> Hanna Behnke </li>
- * 				<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikation </li>
- *			</ul>
- *		</li> 
- *		<li>
- *			<ul>
- *				<li> <strong> Version: </strong> 3.3 </li>
- *				<li> <strong> Datum: </strong> 14.08.16 </li>
- *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 				<li> <strong> Beschreibung: </strong> Bug Fixes </li>
- *			</ul>
- *		</li>
- *
- * </ol>
- * @version 3.3
- * @author Alexander Reichenbach
- *
- */
+/** 
+12  * <strong> Zweck:</strong>  
+13  *  <ul>  
+14  *      <li>Verwaltet Gesamtlisten der Nutzer, Raeume und Reservierungen und koordiniert Änderungen an diesen </li> 
+15  *      <li>Zugriff auf Persistenzschicht </li> 
+16  *  </ul> 
+17  * <h2>Aenderungshistorie:</h2> 
+18  *  
+19  * <ol> 
+20  * 		<li> 
+21  * 			<ul> 
+22  * 				<li> <strong> Version: </strong> 1.0 </li> 
+23  *				<li> <strong> Datum: </strong> 25.06.16 </li> 
+24  *				<li> <strong> Autor: </strong> Alexander Reichenbach </li> 
+25  * 				<li> <strong> Beschreibung: </strong> Initiale Befuellung </li> 
+26  *			 </ul> 
+27  *		</li> 
+28  *		<li> 
+29  *			<ul> 
+30  *				<li> <strong> Version: </strong> 1.1 </li> 
+31  *				<li> <strong> Datum: </strong> 11.07.16 </li> 
+32  *				<li> <strong> Autor: </strong> Alexander Reichenbach </li> 
+33  * 				<li> <strong> Beschreibung: </strong> Update: Raumfinder-Suche </li> 
+34  *			</ul> 
+35  *		</li> 
+36  *		<li> 
+37  *			<ul> 
+38  *				<li> <strong> Version: </strong> 1.2 </li> 
+39  *				<li> <strong> Datum: </strong> 21.07.16 </li> 
+40  *				<li> <strong> Autor: </strong> Alexander Reichenbach </li> 
+41  * 				<li> <strong> Beschreibung: </strong> reservieren und addReservierung hinzugefuegt </li> 
+42  *			</ul> 
+43  *		</li> 
+44  *		<li> 
+45  *			<ul> 
+46  *				<li> <strong> Version: </strong> 2.0 </li> 
+47  *				<li> <strong> Datum: </strong> 13.07.16 </li> 
+48  *				<li> <strong> Autor: </strong> Alexander Reichenbach </li> 
+49  * 				<li> <strong> Beschreibung: </strong> Update: Major Update </li> 
+50  *			</ul> 
+51  *		</li> 
+52  *		<li> 
+53  *			<ul> 
+54  *				<li> <strong> Version: </strong> 2.1 </li> 
+55  *				<li> <strong> Datum: </strong> 02.08.16 </li> 
+56  *				<li> <strong> Autor: </strong> Hanna Behnke </li> 
+57  * 				<li> <strong> Beschreibung: </strong> save()- und load()-Methoden hinzugefuegt </li> 
+58  *			</ul> 
+59  *		</li> 
+60  *		<li> 
+61  *			<ul> 
+62  *				<li> <strong> Version: </strong> 2.2 </li> 
+63  *				<li> <strong> Datum: </strong> 11.08.16 </li> 
+64  *				<li> <strong> Autor: </strong> Hanna Behnke </li> 
+65  * 				<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li> 
+66  *			</ul> 
+67  *		</li> 
+68  *		<li> 
+69  *			<ul> 
+70  *				<li> <strong> Version: </strong> 2.3 </li> 
+71  *				<li> <strong> Datum: </strong> 07.08.16 </li> 
+72  *				<li> <strong> Autor: </strong> Hanna Behnke </li> 
+73  * 				<li> <strong> Beschreibung: </strong> Getter und Setter ResCounter hinzugefuegt </li> 
+74  *			</ul> 
+75  *		</li> 
+76  *  	<li> 
+77  *			<ul> 
+78  *				<li> <strong> Version: </strong> 3.0 </li> 
+79  *				<li> <strong> Datum: </strong> 10.08.16 </li> 
+80  *				<li> <strong> Autor: </strong> Alexander Reichenbach </li> 
+81  * 				<li> <strong> Beschreibung: </strong> Finales Update </li> 
+82  *			</ul> 
+83  *		</li> 
+84  *		<li> 
+85  *			<ul> 
+86  *				<li> <strong> Version: </strong> 3.1 </li> 
+87  *				<li> <strong> Datum: </strong> 11.08.16 </li> 
+88  *				<li> <strong> Autor: </strong> Alexander Reichenbach </li> 
+89  * 				<li> <strong> Beschreibung: </strong> Bug Fixes </li> 
+90  *			</ul> 
+91  *		</li> 
+92  *  *		<li> 
+93  *			<ul> 
+94  *				<li> <strong> Version: </strong> 3.2 </li> 
+95  *				<li> <strong> Datum: </strong> 12.08.16 </li> 
+96  *				<li> <strong> Autor: </strong> Hanna Behnke </li> 
+97  * 				<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikation </li> 
+98  *			</ul> 
+99  *		</li>  
+100  *		<li> 
+101  *			<ul> 
+102  *				<li> <strong> Version: </strong> 3.3 </li> 
+103  *				<li> <strong> Datum: </strong> 14.08.16 </li> 
+104  *				<li> <strong> Autor: </strong> Alexander Reichenbach </li> 
+105  * 				<li> <strong> Beschreibung: </strong> Bug Fixes </li> 
+106  *			</ul> 
+107  *		</li> 
+108  * 
+109  * </ol> 
+110  * @version 3.3 
+111  * @author Alexander Reichenbach 
+112  * 
+113  */ 
+
 
 
 public class Raumfinder implements VerarbeitungInterfaces.RaumfinderIF, Serializable {
@@ -132,7 +133,7 @@ public class Raumfinder implements VerarbeitungInterfaces.RaumfinderIF, Serializ
         raeume = new ArrayList<Raum>();
         reservierungen = new ArrayList<Reservierung>();
         nutzer = new ArrayList<Nutzer>();
-        onEinleser = new OnlineEinleser();
+        onEinleser = new OnlineEinleser(this);
         fileAdapter = RaumfinderFileAdapter.getInstance();
     }
 
@@ -140,18 +141,6 @@ public class Raumfinder implements VerarbeitungInterfaces.RaumfinderIF, Serializ
     public static Raumfinder getInstance() {
         return ourInstance;
     }
-
-    /*// manueller Konstruktor
-    public Raumfinder(ArrayList<Raum> raeume, ArrayList<Reservierung> reservierungen, ArrayList<Nutzer> nutzer, OnlineEinleser onEinleser){
-
-        this.raeume = raeume;
-        this.reservierungen = reservierungen;
-        this.nutzer=nutzer;
-        this.onEinleser = onEinleser;
-        fileAdapter = new RaumfinderFileAdapter (this);
-
-        onlineEinlesen();
-    }*/
 
 
 
@@ -338,15 +327,37 @@ public class Raumfinder implements VerarbeitungInterfaces.RaumfinderIF, Serializ
     // Raumverwaltung
 
     public void addRaum(Raum a){
-        raeume.add(a);
-        //raeume.sort();
+        if (raeume.size()==0) { 					//Wenn die Reservierungsliste leer ist, wird das Reservierungsobjekt sofort hinzugefügt
+            raeume.add(a);
+            return;
+        }
+        else { 									    //Sonst wird die Reservierung nach Startpunkt des Zeitraumes sortiert in die Liste eingefügt
+            for (int i=0; i<raeume.size(); i++) {
+                if (raeume.get(i).getRaumBezeichnung().compareToIgnoreCase(a.getRaumBezeichnung()) > 0) {
+                    raeume.add(i, a);
+                    return;
+                }
+            }
+            raeume.add(a);                          // Wenn bisher nicht hinzugefügt, dann ans Ende der ArrayList
+        }
     }
 
     public void addRaum (String raumKennung, boolean beamer, boolean ohp, boolean tafel, boolean smartb, boolean whiteb, boolean computerr, int kapazitaet, boolean admin){
         addRaum (new Raum (raumKennung, new Ausstattung(beamer, ohp, tafel, smartb, whiteb, computerr, kapazitaet), admin));
     }
 
-    public void loescheRaum (Raum a) { raeume.remove(a); }
+    public void sortiereRaumNeuEin (Raum a){
+        raeume.remove(a);
+        addRaum(a);
+    }
+
+    public void loescheRaum (Raum a) {
+        raeume.remove(a);
+        ArrayList<Reservierung> raumReses = a.getBelegung();
+        for (int j=0; j<raumReses.size(); j++){
+            raumReses.get(j).setError(true);
+        }
+    }
 
     public ArrayList<Raum> getRaeume() {
         return raeume;
@@ -403,8 +414,25 @@ public class Raumfinder implements VerarbeitungInterfaces.RaumfinderIF, Serializ
         return true;
     }
 
+    public void sortiereNutzerNeuEin (Nutzer n){
+        nutzer.remove(n);
+        addNutzer(n);
+    }
+
     public void addNutzer(Nutzer n){
-        nutzer.add(n);
+        if (nutzer.size()==0) { 					//Wenn die Reservierungsliste leer ist, wird das Reservierungsobjekt sofort hinzugefügt
+            nutzer.add(n);
+            return;
+        }
+        else { 									    //Sonst wird die Reservierung nach Startpunkt des Zeitraumes sortiert in die Liste eingefügt
+            for (int i=0; i<nutzer.size(); i++) {
+                if (nutzer.get(i).getName().compareToIgnoreCase(n.getName()) > 0) {
+                    nutzer.add(i, n);
+                    return;
+                }
+            }
+            nutzer.add(n);                          // Wenn bisher nicht hinzugefügt, dann ans Ende der ArrayList
+        }
     }
 
     public ArrayList<Nutzer> getNutzer() {
@@ -449,7 +477,7 @@ public class Raumfinder implements VerarbeitungInterfaces.RaumfinderIF, Serializ
      */
     public void load(){
         ourInstance = (Raumfinder)fileAdapter.load();
-        onEinleser = new OnlineEinleser();
+        onEinleser = new OnlineEinleser(ourInstance);
         fileAdapter = RaumfinderFileAdapter.getInstance();
     }
 }
