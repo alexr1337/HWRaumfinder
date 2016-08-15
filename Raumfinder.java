@@ -1,4 +1,4 @@
-﻿package Verarbeitung;
+package Verarbeitung;
 
 import Persistenz.*;
 import VerarbeitungInterfaces.RaumfinderIF;
@@ -485,7 +485,7 @@ public class Raumfinder implements VerarbeitungInterfaces.RaumfinderIF, Serializ
      */
     public void load(){
         ourInstance = (Raumfinder)fileAdapter.load();
-        onEinleser = new OnlineEinleser(ourInstance);
-        fileAdapter = RaumfinderFileAdapter.getInstance();
+        ourInstance.onEinleser = new OnlineEinleser(ourInstance);
+        ourInstance.fileAdapter = RaumfinderFileAdapter.getInstance();
     }
 }

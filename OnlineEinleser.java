@@ -1,4 +1,4 @@
-﻿package Verarbeitung;
+package Verarbeitung;
 
 import VerarbeitungInterfaces.RaumfinderIF;
 
