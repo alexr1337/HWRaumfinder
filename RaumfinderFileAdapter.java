@@ -7,63 +7,12 @@ import java.io.*;
 import java.util.Scanner;
 
 /**
- * <strong> Zweck: </strong> Realisiert das Speichern und Laden des Programmes mit allen angelegten Raeumen, Nutzern und Reservierungen
- * <h2>Aenderungshistorie:</h2>
- * <ol>
- * 	<li>
- * 		<ul>
- * 			<li> <strong> Version: </strong> 1.0 </li>
- *			<li> <strong> Datum: </strong> 07.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Erstellung Persistenzschicht </li>
- *		 </ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 1.1 </li>
- *			<li> <strong> Datum: </strong> 07.08.16 </li>
- *			<li> <strong> Autor: </strong> Hanna Behnke </li>
- * 			<li> <strong> Beschreibung: </strong> Speicherung des statischen ResCounters hinzugefuegt </li>
- *		</ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.0 </li>
- *			<li> <strong> Datum: </strong> 08.08.16 </li>
- *			<li> <strong> Autor: </strong> Hanna Behnke </li>
- * 			<li> <strong> Beschreibung: </strong> Major Update </li>
- *		</ul>
- *	</li>
- * 	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.1 </li>
- *			<li> <strong> Datum: </strong> 11.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Interfaces implementiert </li>
- *		</ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.2 </li>
- *			<li> <strong> Datum: </strong> 11.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Bug Fixes </li>
- *		</ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.3 </li>
- *			<li> <strong> Datum: </strong> 13.08.16 </li>
- *			<li> <strong> Autor: </strong> Hanna Behnke </li>
- * 			<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li>
- *		</ul>
- *	</li>
- * </ol>
- * @version 2.3
+ * <strong>Zweck:</strong> Realisiert das Speichern und Laden des Programmes mit allen angelegten Räumen, Nutzern und Reservierungen
+ * <p><strong>Änderungshistorie:</strong></p>
+ * @version 3.2
  * @author Hanna Behnke, Alexander Reichenbach
  *
  */
- 
 public class RaumfinderFileAdapter implements RaumfinderFileAdapterIF {
 
 	// Singleton-Implementierung
@@ -121,12 +70,12 @@ public class RaumfinderFileAdapter implements RaumfinderFileAdapterIF {
 	public RaumfinderIF load() {
 
 		try {
-			// Einlesen des resCounters
+			// Einlesen des Raumfinder-Interfaces
 			Scanner sc = new Scanner(rescounterdatei);
 			long resCounter = sc.nextLong();
 			sc.close();
 			
-			// Einlesen des Raumfinder-Interfaces
+			// Einlesen des resCounters
 			ObjectInputStream in = new ObjectInputStream (new FileInputStream(datei));
 			RaumfinderIF rfif = (RaumfinderIF) in.readObject();
 			rfif.setResCounter(resCounter);
