@@ -10,9 +10,51 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 /**
- * <strong>Zweck:</strong> Definiert Design und Funktionalitäten des Registrierungspanels
- * <p><strong>Änderungshistorie:</strong></p>
- * @version 2.2
+ * <strong> Zweck: </strong> Definiert Design und Funktionalitaeten des Registrierungspanels
+ * <h2>Aenderungshistorie:</h2>
+ * <ol>
+ * 	<li>
+ * 		<ul>
+ * 			<li> <strong> Version: </strong> 1.0 </li>
+ *			<li> <strong> Datum: </strong> 06.08.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Erstellung und Designentwurf </li>
+ *		 </ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.1 </li>
+ *			<li> <strong> Datum: </strong> 10.08.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Überarbeitung Design </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.2 </li>
+ *			<li> <strong> Datum: </strong> 12.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Implementierung ActionListener </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.3 </li>
+ *			<li> <strong> Datum: </strong> 10.08.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Unit-Spezifikation </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.4 </li>
+ *			<li> <strong> Datum: </strong> 10.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Minor Bugfixes </li>
+ *		</ul>
+ *	</li>
+ * </ol>
+ * @version 1.4
  * @author Alexander Reichenbach
  *
  */
