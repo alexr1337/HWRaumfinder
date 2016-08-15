@@ -90,7 +90,8 @@ import java.util.Date;
     private RaumfinderIF rf;
     private Zeitraum tempZeitraum=null;
 
-    private JPanel aktuelleAnsicht, header, contentPanel, fixedPanel;
+    private GUIPanel aktuelleAnsicht;
+    private JPanel header, contentPanel, fixedPanel;
     private JLabel titelLabel;
     private JButton headerBtn;
     private String[] panelArgs;

@@ -24,54 +24,12 @@ import javax.swing.border.LineBorder;
 
 /**
  * <strong>Zweck:</strong> Definiert Design und Funktionalitäten der Nutzerverwaltung
- * <h2>Aenderungshistorie:</h2>
- * <ol>
- * 	<li>
- * 		<ul>
- * 			<li> <strong> Version: </strong> 1.0 </li>
- *			<li> <strong> Datum: </strong> 06.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Erstellung </li>
- *		 </ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.0 </li>
- *			<li> <strong> Datum: </strong> 10.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Major Update </li>
- *		</ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.1 </li>
- *			<li> <strong> Datum: </strong> 11.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Bug Fixes </li>
- *		</ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.2 </li>
- *			<li> <strong> Datum: </strong> 12.08.16 </li>
- *			<li> <strong> Autor: </strong> Hanna Behnke </li>
- * 			<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li>
- *		</ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.3 </li>
- *			<li> <strong> Datum: </strong> 13.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Bug Fixes </li>
- *		</ul>
- *	</li>
- * </ol>
- * @version 2.3
+ * <p><strong>Änderungshistorie:</strong></p>
+ * @version 2.2
  * @author Alexander Reichenbach
  *
  */
-public class NutzerverwaltungsPanel extends JPanel {
+public class NutzerverwaltungsPanel extends GUIPanel {
     private GUIFrame frame;
     private String[] nutzer;
     private String[] bearbeiteterNutzerDaten = {"",""};
@@ -129,7 +87,7 @@ public class NutzerverwaltungsPanel extends JPanel {
         
         JPanel nutzerBearbeitung = new JPanel(new GridLayout(5,2,5,5));
         nutzerBearbeitung.setBorder(BorderFactory.createTitledBorder(new LineBorder(Color.darkGray, 1), "Bearbeiten:"));
-        	JLabel nutzerNameLbl = new JLabel ("Nutzername:");		// BORDERS FEHLEN
+        	JLabel nutzerNameLbl = new JLabel ("Nutzername:");
         	nutzerNameLbl.setBorder(new EmptyBorder(0,5,0,0));
         	nutzerBearbeitung.add(nutzerNameLbl);
             nutzerNameText = new JTextField(bearbeiteterNutzerDaten[0]);

@@ -1,13 +1,11 @@
 package Oberflaeche;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -65,7 +63,7 @@ import java.util.Date;
  *
  */
 
-public class ReservierungsPanel extends JPanel {
+public class ReservierungsPanel extends GUIPanel {
 
     private GUIFrame frame;
     private Date start, ende;
@@ -102,13 +100,7 @@ public class ReservierungsPanel extends JPanel {
 
         setupCalendar();
 
-        Calendar today = Calendar.getInstance();
-        //today.setTime(sdf.parse(datumStr));
-        //while (c1.before(today)||c2.before(today)) {
-        //    c1.add(Calendar.DATE, 1);
-        //    c2.add(Calendar.DATE, 1);
-        //}
-        today=c1;
+        Calendar today=c1;
         today.set(Calendar.HOUR_OF_DAY, 19);
         today.set(Calendar.MINUTE, 45);
         if (c1.after(today)||c2.after(today)) {
@@ -275,11 +267,9 @@ public class ReservierungsPanel extends JPanel {
             if (frei){
                 verfuegbarkeit.setText("Raum verfügbar!");
                 verfuegbarkeit.setForeground(Color.GREEN);
-                //verfuegbarkeit.setBorder(new LineBorder(Color.green, 5));
             } else {
                 verfuegbarkeit.setText("Raum belegt!");
                 verfuegbarkeit.setForeground(Color.red);
-                //verfuegbarkeit.setBorder(new LineBorder(Color.red, 5));
             }
     	} else {
     		verfuegbarkeit.setText("Raum nicht buchbar!");

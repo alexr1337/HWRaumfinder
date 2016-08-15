@@ -1,7 +1,5 @@
 package Oberflaeche;
 
-import javafx.scene.paint.*;
-
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
@@ -10,59 +8,15 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
-import java.util.ArrayList;
 
 /**
- * <strong> Zweck:</strong> Definiert Design und Funktionalitaeten des Hauptmenue-Panels
- * <h2>Aenderungshistorie:</h2>
- * <ol>
- * 	<li>
- * 		<ul>
- * 			<li> <strong> Version: </strong> 1.0 </li>
- *			<li> <strong> Datum: </strong> 06.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Erstellung </li>
- *		 </ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.0 </li>
- *			<li> <strong> Datum: </strong> 10.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Major Update </li>
- *		</ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.1 </li>
- *			<li> <strong> Datum: </strong> 11.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Bug Fixes </li>
- *		</ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.2 </li>
- *			<li> <strong> Datum: </strong> 12.08.16 </li>
- *			<li> <strong> Autor: </strong> Hanna Behnke </li>
- * 			<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li>
- *		</ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.3 </li>
- *			<li> <strong> Datum: </strong> 12.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Bug Fixes </li>
- *		</ul>
- *	</li>
- * </ol>
- * @version 2.3
+ * <strong>Zweck:</strong> Definiert Design und Funktionalitäten des Hauptmenü-Panels
+ * <p><strong>Änderungshistorie:</strong></p>
+ * @version 2.4
  * @author Alexander Reichenbach
  *
  */
- 
-public class HauptmenuePanel extends JPanel {
+public class HauptmenuePanel extends GUIPanel {
     private GUIFrame frame;
     private String[] raeume;
 

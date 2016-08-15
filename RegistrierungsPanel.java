@@ -1,52 +1,22 @@
 package Oberflaeche;
 
-import java.awt.EventQueue;
-
 import javax.swing.*;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.LayoutStyle.ComponentPlacement;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 /**
- * <strong> Zweck: </strong> Definiert Design und Funktionalitaeten des Registrierungspanels
- * <h2>Aenderungshistorie:</h2>
- * <ol>
- * 	<li>
- * 		<ul>
- * 			<li> <strong> Version: </strong> 1.0 </li>
- *			<li> <strong> Datum: </strong> 06.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Erstellung </li>
- *		 </ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.0 </li>
- *			<li> <strong> Datum: </strong> 10.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Major Update </li>
- *		</ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.1 </li>
- *			<li> <strong> Datum: </strong> 12.08.16 </li>
- *			<li> <strong> Autor: </strong> Hanna Behnke </li>
- * 			<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li>
- *		</ul>
- *	</li>
- * </ol>
- * @version 2.1
+ * <strong>Zweck:</strong> Definiert Design und Funktionalitäten des Registrierungspanels
+ * <p><strong>Änderungshistorie:</strong></p>
+ * @version 2.2
  * @author Alexander Reichenbach
  *
  */
-public class RegistrierungsPanel extends JPanel {
+public class RegistrierungsPanel extends GUIPanel {
 
     GUIFrame frame;
     private JTextField nutzername, frage, antwort;

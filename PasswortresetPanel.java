@@ -7,40 +7,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * <strong> Zweck:</strong> Definiert Design und Funktionalitaeten des Passwortreset-Panels
- * <h2>Aenderungshistorie:</h2>
- * <ol>
- * 	<li>
- * 		<ul>
- * 			<li> <strong> Version: </strong> 1.0 </li>
- *			<li> <strong> Datum: </strong> 06.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Erstellung </li>
- *		 </ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.0 </li>
- *			<li> <strong> Datum: </strong> 10.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Major Update </li>
- *		</ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.1 </li>
- *			<li> <strong> Datum: </strong> 12.08.16 </li>
- *			<li> <strong> Autor: </strong> Hanna Behnke </li>
- * 			<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li>
- *		</ul>
- *	</li>
- * </ol>
+ * <strong>Zweck:</strong> Definiert Design und Funktionalitäten des Passwortreset-Panels
+ * <p><strong>Änderungshistorie:</strong></p>
  * @version 2.1
  * @author Alexander Reichenbach
  *
  */
- 
-public class PasswortresetPanel extends JPanel {
+public class PasswortresetPanel extends GUIPanel {
     private GUIFrame frame;
     private String aktuelleFrage;
 
@@ -72,7 +45,6 @@ public class PasswortresetPanel extends JPanel {
         add(fields, BorderLayout.CENTER);
 
         JButton okBtn = new JButton("Passwort zurücksetzen");
-        //okBtn.setBorder(new EmptyBorder(5,0,10,0));
         okBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 if (!neuPW1.getText().equals(neuPW2.getText())){

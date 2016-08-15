@@ -61,7 +61,7 @@ import javax.swing.border.LineBorder;
  *
  */
 
-public class RaumverwaltungsPanel extends JPanel {
+public class RaumverwaltungsPanel extends GUIPanel {
     private GUIFrame frame;
     private String[] raum;
     private String[] bearbeiteterRaumDaten = {"",""};
