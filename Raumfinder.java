@@ -1,7 +1,6 @@
 package Verarbeitung;
 
 import Persistenz.*;
-import VerarbeitungInterfaces.RaumfinderIF;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -14,15 +13,14 @@ import java.util.concurrent.ConcurrentSkipListMap;
   *      <li>Verwaltet Gesamtlisten der Nutzer, Raeume und Reservierungen und koordiniert Änderungen an diesen </li> 
   *      <li>Zugriff auf Persistenzschicht </li> 
   *  </ul> 
-  * <h2>Aenderungshistorie:</h2> 
-  *  
+  * <p><strong>Aenderungshistorie:</strong></p>
   * <ol> 
   * 		<li> 
   * 			<ul> 
   * 				<li> <strong> Version: </strong> 1.0 </li> 
   *				<li> <strong> Datum: </strong> 25.06.16 </li> 
-  *				<li> <strong> Autor: </strong> Alexander Reichenbach </li> 
-  * 				<li> <strong> Beschreibung: </strong> Initiale Befuellung </li> 
+  *				<li> <strong> Autor: </strong> Hanna Behnke </li>
+  * 				<li> <strong> Beschreibung: </strong> Erstellung </li>
   *			 </ul> 
   *		</li> 
   *		<li> 

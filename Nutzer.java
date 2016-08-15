@@ -6,16 +6,15 @@ import java.security.NoSuchAlgorithmException;
 
 
 /**
- * <strong/>Zweck:</strong> Definiert einen Nutzer, dem Name, verschluesseltes Passwort, eine Sicherheitsfrage und die verschluesselte Antwort darauf zugeordnet sind
- * <h2>Aenderungshistorie:</h2>
- * 
+ * <strong/>Zweck:</strong> Definiert einen Nutzer, dem Name, verschlüsseltes Passwort, eine Sicherheitsfrage und die verschlüsselte Antwort darauf zugeordnet sind
+ * <p><strong>Änderungshistorie:</strong></p>
  * <ol>
  * 	<li>
  * 		<ul>
  * 			<li> <strong> Version: </strong> 1.0 </li>
- *			<li> <strong> Datum: </strong> 11.07.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Initiale Befuellung </li>
+ *			<li> <strong> Datum: </strong> 25.06.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Erstellung </li>
  *		 </ul>
  *	</li>
  * 	<li>
@@ -36,7 +35,7 @@ import java.security.NoSuchAlgorithmException;
  *	</li>
  *	<li>
  *		<ul>
- *			<li> <strong> Version: </strong> 2.0 </li>
+ *			<li> <strong> Version: </strong> 1.3 </li>
  *			<li> <strong> Datum: </strong> 07.08.16 </li>
  *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
  * 			<li> <strong> Beschreibung: </strong> Update Package Verarbeitung </li>
@@ -44,7 +43,7 @@ import java.security.NoSuchAlgorithmException;
  *	</li>
  *	<li>
  *		<ul>
- *			<li> <strong> Version: </strong> 2.1 </li>
+ *			<li> <strong> Version: </strong> 1.4 </li>
  *			<li> <strong> Datum: </strong> 11.08.16 </li>
  *			<li> <strong> Autor: </strong> Hanna Behnke </li>
  * 			<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li>
@@ -52,15 +51,14 @@ import java.security.NoSuchAlgorithmException;
  *	</li>
  *	<li>
  *		<ul>
- *			<li> <strong> Version: </strong> 2.2 </li>
+ *			<li> <strong> Version: </strong> 1.5 </li>
  *			<li> <strong> Datum: </strong> 12.08.16 </li>
  *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Bug Fixes </li>
+ * 			<li> <strong> Beschreibung: </strong> Fehler Behoben: MessageDigest nicht mehr ausschließlich statisch initialisiert </li>
  *		</ul>
  *	</li>
  * </ol>
- * 
- * @version 2.2
+ * @version 1.5
  * @author Alexander Reichenbach
  *
  */

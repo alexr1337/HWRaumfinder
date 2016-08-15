@@ -7,15 +7,15 @@ import java.util.Date;
 
 
 /**
- * <strong> Zweck: </strong> Ermoeglicht das Erzeugen von Zeitraum-Objekten mit einer bestimmten Dauer, Start- und Endzeitpunkt
- * <h2>Aenderungshistorie:</h2> 
+ * <strong>Zweck:</strong> Ermöglicht das Erzeugen von Zeitraum-Objekten mit einer bestimmten Dauer, Start- und Endzeitpunkt
+ * <p><strong>Änderungshistorie:</strong></p>
  *<ol>
  *   <li>
  *     <ul>
  *		<li> <strong> Version: </strong> 1.0 </li>
  *		<li> <strong> Datum: </strong> 25.06.16 </li>
- *		<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 		<li> <strong> Beschreibung: </strong> Initiale Befüllung </li>
+ *		<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 		<li> <strong> Beschreibung: </strong> Erstellung </li>
  *	</ul>
  *   </li>
  *   <li>
@@ -44,15 +44,7 @@ import java.util.Date;
  *   </li>
  *   <li>
  *	<ul>
- * 		<li> <strong> Version: </strong> 3.0 </li>
- *		<li> <strong> Datum: </strong> 06.08.16 </li>
- * 		<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 		<li> <strong> Beschreibung: </strong> Major Update </li>
- *	</ul>
- *   </li>
- *   <li>
- *	<ul>
- * 		<li> <strong> Version: </strong> 3.1 </li>
+ * 		<li> <strong> Version: </strong> 2.5 </li>
  *		<li> <strong> Datum: </strong> 11.08.16 </li>
  * 		<li> <strong> Autor: </strong> Hanna Behnke </li>
  * 		<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikation </li>
@@ -60,23 +52,15 @@ import java.util.Date;
  *   </li>
  *   <li>
  *	<ul>
- * 		<li> <strong> Version: </strong> 3.2 </li>
+ * 		<li> <strong> Version: </strong> 2.6 </li>
  *		<li> <strong> Datum: </strong> 11.08.16 </li>
  * 		<li> <strong> Autor: </strong> Alexander Reichenbach </li>
  * 		<li> <strong> Beschreibung: </strong> Bug Fixes </li>
  *	</ul>
  *   </li>
- *   <li>
- *	<ul>
- * 		<li> <strong> Version: </strong> 3.3 </li>
- *		<li> <strong> Datum: </strong> 12.08.16 </li>
- * 		<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 		<li> <strong> Beschreibung: </strong> Bug Fixes </li>
- *	</ul>
- *   </li>
  * </ol>
- * 
- * @version 3.3
+ *
+ * @version 2.6
  * @author Hanna Behnke, Alexander Reichenbach
  *
  */

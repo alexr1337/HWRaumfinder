@@ -23,7 +23,7 @@ import java.util.Date;
  * 				<li> <strong> Version: </strong> 1.0 </li>
  *				<li> <strong> Datum: </strong> 25.06.16 </li>
  *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 				<li> <strong> Beschreibung: </strong> Initiale Befuellung </li>
+ * 				<li> <strong> Beschreibung: </strong> Erstellung </li>
  *			 </ul>
  *		</li>
  *		<li>
@@ -255,18 +255,11 @@ public class OnlineEinleser {
 
         try {
             while (tempDatei.indexOf("SUMMARY")>0){
-               /*tempDatei = substringAfter(tempDatei, "SUMMARY:");
-                tempStr = tempDatei.substring(0,tempDatei.indexOf("LOCATION")-2);
-                strName = tempStr.substring(0, tempStr.indexOf("\\")) + " " + tempStr.substring(tempStr.indexOf("\\")+3, tempStr.lastIndexOf("\\"));     //ERROR HERE
-                strBesitzer = tempStr.substring(tempStr.lastIndexOf("\\")+2, tempStr.length());
-                    strBesitzer = strBesitzer.replaceAll("\\\\", "");
-*/
                 tempDatei = substringAfter(tempDatei, "LOCATION:");
                 strRaum = tempDatei.substring(0,tempDatei.indexOf("DESCRIPTION")-2);
                     strRaum = strRaum.replaceAll("\\\\n", "");
                     strRaum = strRaum.replaceAll("\\\\", "");
                     strRaum = strRaum.replaceAll("CL: ", "");
-                //neu ab hier:
                 tempDatei = substringAfter(tempDatei, "DESCRIPTION:Art: ");
                 tempStr = tempDatei.substring(0,tempDatei.indexOf("DTSTART")-2);
                     tempStr = tempStr.replaceAll("\\n", "");
@@ -283,27 +276,10 @@ public class OnlineEinleser {
                     strBesitzer = strBesitzer.replaceAll("\\\\n", "");
                     strBesitzer = strBesitzer.replaceAll("\\\\", "");
                 tempStr = substringAfter(tempStr, "Raum: ");
-                //strRaum = tempStr; //.substring(0,tempStr.indexOf("DTSTART"));
-                    //strRaum = strRaum.replaceAll("\\\\n", "");
-
                 tempDatei = substringAfter(tempDatei,"DTSTART;TZID=Europe/Berlin:");
                 strStart = tempDatei.substring(0,tempDatei.indexOf("DTEND")-2);
                 tempDatei = substringAfter(tempDatei, "DTEND;TZID=Europe/Berlin:");
                 strEnde = tempDatei.substring(0,tempDatei.indexOf("PRIORITY")-2);
-
-                /*
-                System.out.println(strName);
-                System.out.println(strBesitzer);
-                System.out.println(strRaum);
-                System.out.println(strStart);
-                System.out.println(strEnde);
-                System.out.println("-----------");
-                */
-
-                // Test:
-//                if (strRaum.length()>50){
- //                   System.out.println("Fuck.");
-  //              }
 
                 if (strRaum.isEmpty()) strRaum = "Ohne Raum";
                 tempRaum = raumfinder.sucheKennung(strRaum);
@@ -326,22 +302,13 @@ public class OnlineEinleser {
 
                 tempBesitzer = new Dozent (strBesitzer);
                 tempZeitraum = new Zeitraum(icsStringToDate(strStart), icsStringToDate(strEnde));
-/*
-                reservierungen.add(
-                        new Reservierung(
-                                tempRaum,
-                                tempBesitzer,
-                                tempZeitraum,
-                                strName
-                        )
-                );*/
+
                 raumfinder.reservieren(new Reservierung(tempRaum, tempBesitzer, tempZeitraum, strName), true);
                 resCounter++;
             }
 
         } catch (IndexOutOfBoundsException e) {
             System.err.println("Interner Fehler: Substring out of Bounds [readEvents]");
-            //e.printStackTrace();
         } catch (UnzulaessigerZeitraumException e) {
             System.err.println("Error: Fehlerhafter Zeitraum.");
         } finally {
@@ -371,7 +338,7 @@ public class OnlineEinleser {
         return erg;
     }
 
-    public Date icsStringToDate (String s) {        // eigentlich private stat public -> aendern!
+    public Date icsStringToDate (String s) {
 
         int year,month,day,hrs,mins,secs;
 

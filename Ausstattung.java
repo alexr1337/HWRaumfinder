@@ -4,16 +4,15 @@ import java.io.Serializable;
 
 
 /**
- * <strong>Zweck:</strong> Ermoeglicht es, Ausstattungsobjekte zu erstellen, die Ausstattung und Kapazitaet eines Raumes beschreiben
- * <h2>Aenderungshistorie:</h2>
- * 
+ * <strong/>Zweck:</strong> Ermöglicht es, Ausstattungsobjekte zu erstellen, die Ausstattung und Kapazität (eines Raumes) beschreiben
+ * <p><strong>Änderungshistorie:</strong> </p>
  * <ol>
  * 	<li>
  * 		<ul>
  * 			<li> <strong> Version: </strong> 1.0 </li>
  *			<li> <strong> Datum: </strong> 25.06.16 </li>
  *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Initiale Befuellung </li>
+ * 			<li> <strong> Beschreibung: </strong> Erstellung </li>
  *		 </ul>
  *	</li>
  *	<li>
@@ -21,7 +20,7 @@ import java.io.Serializable;
  *			<li> <strong> Version: </strong> 1.1 </li>
  *			<li> <strong> Datum: </strong> 12.07.16 </li>
  *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Update: Neues Scoring </li>
+ * 			<li> <strong> Beschreibung: </strong> hatMindestanforerungen() eingefügt </li>
  *		</ul>
  *	</li>
  *	<li>
@@ -45,7 +44,7 @@ import java.io.Serializable;
  *			<li> <strong> Version: </strong> 1.4 </li>
  *			<li> <strong> Datum: </strong> 11.08.16 </li>
  *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Interfaces implementiert </li>
+ * 			<li> <strong> Beschreibung: </strong> Update: Implements AusstattungIF </li>
  *		</ul>
  *	</li>
  *	<li>
@@ -60,19 +59,10 @@ import java.io.Serializable;
  *		<ul>
  *			<li> <strong> Version: </strong> 2.0 </li>
  *			<li> <strong> Datum: </strong> 12.08.16 </li>
- *			<li> <strong> Autor: </strong> Hanna Behnke </li>
- * 			<li> <strong> Beschreibung: </strong> Finales Update </li>
- *		</ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.1 </li>
- *			<li> <strong> Datum: </strong> 13.08.16 </li>
  *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Bug Fixes </li>
+ * 			<li> <strong> Beschreibung: </strong> Fehler behoben: Wertberechnung in hatMindestanforerung() </li>
  *		</ul>
  *	</li>
- * </ol>
  * @version 2.1
  * @author Hanna Behnke, Alexander Reichenbach
  *

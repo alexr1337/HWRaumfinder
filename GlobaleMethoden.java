@@ -15,7 +15,7 @@ import java.util.Date;
  * 			<li> <strong> Version: </strong> 1.0 </li>
  *			<li> <strong> Datum: </strong> 13.07.16 </li>
  *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Initiale Befuellung </li>
+ * 			<li> <strong> Beschreibung: </strong> Erstellung </li>
  *		 </ul>
  *	</li>
  *	<li>
@@ -23,35 +23,19 @@ import java.util.Date;
  *			<li> <strong> Version: </strong> 1.1 </li>
  *			<li> <strong> Datum: </strong> 28.07.16 </li>
  *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Update: Package Verarbeitung hinzugefuegt </li>
+ * 			<li> <strong> Beschreibung: </strong> Erste Kommentierung </li>
  *		</ul>
  *	</li>
  *	<li>
  *		<ul>
- *			<li> <strong> Version: </strong> 2.0 </li>
- *			<li> <strong> Datum: </strong> 06.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Finales Update </li>
- *		</ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.1 </li>
- *			<li> <strong> Datum: </strong> 12.08.16 </li>
+ *			<li> <strong> Version: </strong> 1.5 </li>
+ *			<li> <strong> Datum: </strong> 11.08.16 </li>
  *			<li> <strong> Autor: </strong> Hanna Behnke </li>
  * 			<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li>
  *		</ul>
  *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.2 </li>
- *			<li> <strong> Datum: </strong> 13.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Bug Fixes </li>
- *		</ul>
- *	</li>
  * </ol>
- * @version 2.2
+ * @version 1.5
  * @author Alexander Reichenbach
  *
  */
