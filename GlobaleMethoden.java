@@ -1,4 +1,4 @@
-package Verarbeitung;
+﻿package Verarbeitung;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -55,7 +55,7 @@ import java.util.Date;
  * @author Alexander Reichenbach
  *
  */
- 
+
 public class GlobaleMethoden {
 
 	
@@ -80,7 +80,7 @@ public class GlobaleMethoden {
                     return;
                 }
             }
-            al.add(neu);
+            al.add(neu);                        // Wenn bisher nicht hinzugefügt, dann ans Ende der ArrayList
         }
     }
 
