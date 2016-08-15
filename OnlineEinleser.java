@@ -1,4 +1,4 @@
-package Verarbeitung;
+﻿package Verarbeitung;
 
 import VerarbeitungInterfaces.RaumfinderIF;
 
@@ -14,8 +14,8 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * <strong>Zweck:</strong> 
- * <h2>Aenderungshistorie:</h2>
+ * <strong>Zweck:</strong> Liest offiziellen Stundenplan aller Kurse des FB2 der HWR Berlin (im Internet verfügbar) herunter und konvertiert diese zu Reservierungen im HWRaumfinder
+ * <p><strong>Änderungshistorie:</strong></p>
  * 
  * <ol>
  * 		<li>
@@ -84,14 +84,14 @@ import java.util.Date;
 
 public class OnlineEinleser {
 
-    private int fileCounter, errCounter;
+    private int fileCounter, resCounter, errCounter;
     private RaumfinderIF raumfinder;
 
     private final String SPEICHERORT = "StundenplanFiles/";
 
 
-    public OnlineEinleser (){
-        raumfinder=Raumfinder.getInstance();
+    public OnlineEinleser (RaumfinderIF raumfinder){
+        this.raumfinder=raumfinder;
         new File(SPEICHERORT).mkdir();
     }
 
@@ -99,19 +99,14 @@ public class OnlineEinleser {
 
         ArrayList<Reservierung> resses = new ArrayList<Reservierung>();
 
-        //download();
-        fileCounter=167;
+        download();
+        resCounter=0;
 
         for (int i=0; i<fileCounter; i++) {
             resses.addAll(readEvents(SPEICHERORT + "events_" + i + ".ics"));
         }
 
-        /*for (int i=0; i<resses.size(); i++){
-            raumfinder.reservieren(resses.get(i), true);
-        }
-
-        System.out.println("OnlineEinleser: "+resses.size()+" Reservierungen eingelesen.");
-        */
+        System.out.println("OnlineEinleser: "+resCounter+" Reservierungen eingelesen.");
     }
 
     private void download(){
@@ -341,6 +336,7 @@ public class OnlineEinleser {
                         )
                 );*/
                 raumfinder.reservieren(new Reservierung(tempRaum, tempBesitzer, tempZeitraum, strName), true);
+                resCounter++;
             }
 
         } catch (IndexOutOfBoundsException e) {
