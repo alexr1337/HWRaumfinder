@@ -11,7 +11,9 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * <strong> Zweck: </strong> Definiert Design und Funktionalitaeten der Reservierungsverwaltung
+ * <strong> Zweck: </strong> Definiert Design und Funktionalitaeten des Reservierungsvorganges inklusive 
+ * Detailanzeige des zu reservierenden Raumes
+ * 
  * <h2>Aenderungshistorie:</h2>
  * <ol>
  * 	<li>
@@ -19,36 +21,52 @@ import java.util.Date;
  * 			<li> <strong> Version: </strong> 1.0 </li>
  *			<li> <strong> Datum: </strong> 06.08.16 </li>
  *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Erstellung und Design </li>
+ * 			<li> <strong> Beschreibung: </strong> Erstellung </li>
  *		 </ul>
  *	</li>
  *	<li>
  *		<ul>
  *			<li> <strong> Version: </strong> 1.1 </li>
  *			<li> <strong> Datum: </strong> 10.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Implementierung ActionListener </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Designentwurf </li>
  *		</ul>
  *	</li>
  *	<li>
  *		<ul>
- *			<li> <strong> Version: </strong> 1.2 </li>
+ *			<li> <strong> Version: </strong> 1.1 </li>
  *			<li> <strong> Datum: </strong> 10.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Überarbeitung getRenderer() und Implementierung popupAuswahlFehlt() </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Überarbeitung Design </li>
  *		</ul>
  *	</li>
  *	<li>
  *		<ul>
- *			<li> <strong> Version: </strong> 1.3 </li>
+ *			<li> <strong> Version: </strong> 2.0 </li>
+ *			<li> <strong> Datum: </strong> 11.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Implementierung ActionListener und Methoden </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.1 </li>
  *			<li> <strong> Datum: </strong> 12.08.16 </li>
  *			<li> <strong> Autor: </strong> Hanna Behnke </li>
  * 			<li> <strong> Beschreibung: </strong> Unit-Spezifikation </li>
  *		</ul>
  *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.2 </li>
+ *			<li> <strong> Datum: </strong> 13.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Überarbeitung setVerfuegbarkeit() </li>
+ *		</ul>
+ *	</li>
  * </ol>
  * 
- * @version 1.3
+ * @version 2.2
  * @author Alexander Reichenbach
  *
  */
