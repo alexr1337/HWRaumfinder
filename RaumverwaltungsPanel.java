@@ -1,4 +1,4 @@
-﻿package Oberflaeche;
+package Oberflaeche;
 
 import java.awt.BorderLayout;
 import java.awt.Color;

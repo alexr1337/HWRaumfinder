@@ -1,4 +1,4 @@
-﻿package Oberflaeche;
+package Oberflaeche;
 
 import javax.swing.*;
 import javax.swing.border.Border;

@@ -1,4 +1,4 @@
-﻿package Oberflaeche;
+package Oberflaeche;
 
 import Verarbeitung.Raumfinder;
 import VerarbeitungInterfaces.RaumfinderIF;
@@ -122,11 +122,13 @@ public class Starter {
         System.out.println("\nHWRaumfinder wird gestartet.");
         
         rf = Raumfinder.getInstance();
+        System.out.println(rf);
         
         if (firstStart) rf.getNutzer().add(admin);
         else {
             rf.load();
             rf= Raumfinder.getInstance();
+            System.out.println(rf);
         }
 
         if (einlesen) {

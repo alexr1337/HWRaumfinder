@@ -1,4 +1,4 @@
-﻿package Oberflaeche;
+package Oberflaeche;
 
 import Verarbeitung.Raumfinder;
 import Verarbeitung.Zeitraum;
