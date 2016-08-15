@@ -25,13 +25,21 @@ import java.io.InputStreamReader;
  *				<li> <strong> Version: </strong> 1.1 </li>
  *				<li> <strong> Datum: </strong> 10.08.16 </li>
  *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 				<li> <strong> Beschreibung: </strong> Wartezeit verkürzt </li>
+ * 				<li> <strong> Beschreibung: </strong> Implementierung von starteHWRaumfinder() und der main-Methode </li>
+ *			</ul>
+ *		</li>
+ *		<li>
+ *			<ul>
+ *				<li> <strong> Version: </strong> 1.2 </li>
+ *				<li> <strong> Datum: </strong> 11.08.16 </li>
+ *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 				<li> <strong> Beschreibung: </strong> Verkürzung Wartezeit</li>
  *			</ul>
  *		</li>
  *		<li>
  *			<ul>
  *				<li> <strong> Version: </strong> 1.3 </li>
- *				<li> <strong> Datum: </strong> 10.08.16 </li>
+ *				<li> <strong> Datum: </strong> 11.08.16 </li>
  *				<li> <strong> Autor: </strong> Alexander Reichenbach </li>
  * 				<li> <strong> Beschreibung: </strong> Fehler behoben (Reihenfolge Erstellung Raumfinder - Erstellung GUIFrame geändert) </li>
  *			</ul>
@@ -41,7 +49,7 @@ import java.io.InputStreamReader;
  *				<li> <strong> Version: </strong> 1.4 </li>
  *				<li> <strong> Datum: </strong> 12.08.16 </li>
  *				<li> <strong> Autor: </strong> Hanna Behnke </li>
- * 				<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li>
+ * 				<li> <strong> Beschreibung: </strong> Unit-Spezifikation </li>
  *			</ul>
  *		</li>
  *		<li>
