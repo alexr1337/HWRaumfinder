@@ -1,4 +1,4 @@
-package Verarbeitung;
+﻿package Verarbeitung;
 
 import VerarbeitungInterfaces.ReservierungIF;
 
@@ -6,8 +6,8 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * <strong> Zweck:</strong> Ermoeglicht die Erstellung von Reservierungsobjekten, denen eine eindeutige Reservierungsnummer 
- * sowie ein Zeitraum, ein Reservierer und ein Raum zugeordnet sind.
+ * <strong>Zweck:</strong> Ermöglicht die Erstellung von Reservierungsobjekten, denen eine eindeutige Reservierungsnummer sowie ein Zeitraum, ein Reservierer und ein Raum zugeordnet sind.
+
  * <h2>Aenderungshistorie:</h2>
  * 
  * <ol>
@@ -139,14 +139,14 @@ public class Reservierung implements VerarbeitungInterfaces.ReservierungIF, Seri
     }
 
     // mit manuell gesetztem Zeitpunkt und Kommentar, für Verarbeitung.OnlineEinleser
-    public Reservierung(Raum raum, Reservierer inhaber, Zeitraum zeitraum, Date zeitpunkt) {
+    public Reservierung(Raum raum, Reservierer inhaber, Zeitraum zeitraum, Date zeitpunkt, String kommentar) {
 
         this.reservierungsNr = resCounter++;
         this.raum = raum;
         this.inhaber = inhaber;
         this.zeitraum = zeitraum;
         this.reservierungsZeitpunkt = zeitpunkt;
-        this.kommentar = "";
+        this.kommentar = kommentar;
         this.error = false;
         this.storniert = false;
     }
