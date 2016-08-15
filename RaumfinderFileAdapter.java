@@ -8,8 +8,59 @@ import java.util.Scanner;
 
 /**
  * <strong>Zweck:</strong> Realisiert das Speichern und Laden des Programmes mit allen angelegten Räumen, Nutzern und Reservierungen
- * <p><strong>Änderungshistorie:</strong></p>
- * @version 3.2
+ * <h2>Aenderungshistorie:</h2>
+ * <ol>
+ <li>
+ * 		<ul>
+ * 			<li> <strong> Version: </strong> 1.0 </li>
+ *			<li> <strong> Datum: </strong> 06.08.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Erstellung </li>
+ *		 </ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.1 </li>
+ *			<li> <strong> Datum: </strong> 11.08.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Implementierung save() und load() </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.2 </li>
+ *			<li> <strong> Datum: </strong> 26.07.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Überarbeitung save() und load() </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 1.3 </li>
+ *			<li> <strong> Datum: </strong> 28.07.16 </li>
+ *			<li> <strong> Autor: </strong> Hanna Behnke </li>
+ * 			<li> <strong> Beschreibung: </strong> Kommentare/ Unit-Spezifikationen </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.0 </li>
+ *			<li> <strong> Datum: </strong> 11.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Bug Fix: Serialisierung des gesamten Raumfinders </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.1 </li>
+ *			<li> <strong> Datum: </strong> 12.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Implementierung Singleton </li>
+ *		</ul>
+ *	</li>
+ * </ol>
+ * 
+ * @version 2.1
  * @author Hanna Behnke, Alexander Reichenbach
  *
  */
@@ -36,7 +87,6 @@ public class RaumfinderFileAdapter implements RaumfinderFileAdapterIF {
 	 * <p><strong>Vorbedingungen:</strong> Es muss einen Raumfinder geben, auf den die Methode angewendet wird.</p>
 	 * <p><strong>Effekt:</strong> Der Raumfinder wird serialisiert und somit im Ganzen als ein Objekt in einer Datei gespeichert. 
 	 * Der statische "resCounter" wird in einer gesonderten Datei gespeichert, da er nicht serialisierbar ist.</p>
-	 *
 	 */
 	@SuppressWarnings({ "resource", "static-access" })
 	public void save(){
