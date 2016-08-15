@@ -1,4 +1,4 @@
-package Oberflaeche;
+﻿package Oberflaeche;
 
 import Verarbeitung.Raumfinder;
 import Verarbeitung.Zeitraum;
@@ -66,20 +66,29 @@ import java.util.Date;
  * 			<li> <strong> Beschreibung: </strong> Minor Bug Fixes </li>
  *		</ul>
  *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.5 </li>
+ *			<li> <strong> Datum: </strong> 14.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Sortierung im Raumfinder </li>
+ *		</ul>
+ *	</li>
  * </ol>
- * @version 2.4
+ * @version 2.5
  * @author Alexander Reichenbach
  *
  */
- class GUIFrame extends JFrame{
+
+ public class GUIFrame extends JFrame{
 	 
 	// Singleton-Implementierung:
 	private static GUIFrame ourInstance = new GUIFrame();
 	 
 	// Attribute:
-    private NutzerIF aktiverNutzer;       // IF
+    private NutzerIF aktiverNutzer;
     private RaumfinderIF rf;
-    private Zeitraum tempZeitraum=null;	// IF
+    private Zeitraum tempZeitraum=null;
 
     private JPanel aktuelleAnsicht, header, contentPanel, fixedPanel;
     private JLabel titelLabel;
@@ -434,7 +443,10 @@ import java.util.Date;
                     "Fehler",
                     JOptionPane.ERROR_MESSAGE);
         } else {
-            tempRaum.setRaumBezeichnung(neuName);
+            if (!altName.equals(neuName)){
+                tempRaum.setRaumBezeichnung(neuName);
+                rf.sortiereRaumNeuEin(rf.sucheKennung(neuName));
+            }
             tempRaum.setAusstattung(beamer, ohp, tafel, smartboard, whiteboard, computerraum, Integer.parseInt(kapa));
             tempRaum.setBuchbar(buchbar);
         }
@@ -589,6 +601,7 @@ import java.util.Date;
             NutzerIF bearbeiteterNutzer = rf.sucheNutzer(nutzernameAlt);
             if (!nutzernameAlt.equals(nutzernameNeu)) {
                 bearbeiteterNutzer.setName(nutzernameNeu);
+                rf.sortiereNutzerNeuEin(rf.sucheNutzer(nutzernameNeu));
                 aenderungen[0] = true;
             } else aenderungen[0] = false;
             if (!passwort.isEmpty()) {

@@ -1,4 +1,4 @@
-package Oberflaeche;
+﻿package Oberflaeche;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -60,7 +60,7 @@ import javax.swing.border.LineBorder;
  * @author Alexander Reichenbach
  *
  */
- 
+
 public class RaumverwaltungsPanel extends JPanel {
     private GUIFrame frame;
     private String[] raum;

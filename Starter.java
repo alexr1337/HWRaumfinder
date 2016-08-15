@@ -1,6 +1,7 @@
-package Oberflaeche;
+﻿package Oberflaeche;
 
 import Verarbeitung.Raumfinder;
+import VerarbeitungInterfaces.RaumfinderIF;
 import Verarbeitung.Admin;
 
 import java.io.BufferedReader;
@@ -65,9 +66,10 @@ import java.io.InputStreamReader;
  * @author Alexander Reichenbach
  *
  */
-public class _Starter {
+
+public class Starter {
     static private BufferedReader din = new BufferedReader(new InputStreamReader(System.in));
-    static private Raumfinder rf;
+    static private RaumfinderIF rf;
     static private GUIFrame gui;
     static private Admin admin;
 
@@ -109,8 +111,8 @@ public class _Starter {
             firstStart = false;
             System.out.println("Erneut Online-Einlesen?");
             eingabe[1] = din.readLine();
-            while (!(eingabe[0].equalsIgnoreCase("y")||eingabe[0].equalsIgnoreCase("n"))) eingabe[0] = din.readLine();
-            if (eingabe[0].equalsIgnoreCase("y")) einlesen = true;
+            while (!(eingabe[1].equalsIgnoreCase("y")||eingabe[0].equalsIgnoreCase("n"))) eingabe[0] = din.readLine();
+            if (eingabe[1].equalsIgnoreCase("y")) einlesen = true;
         }
 
         starteHWRaumfinder();
@@ -122,7 +124,10 @@ public class _Starter {
         rf = Raumfinder.getInstance();
         
         if (firstStart) rf.getNutzer().add(admin);
-        else rf.load();
+        else {
+            rf.load();
+            rf= Raumfinder.getInstance();
+        }
 
         if (einlesen) {
             System.out.println("Daten werden eingelesen...");
