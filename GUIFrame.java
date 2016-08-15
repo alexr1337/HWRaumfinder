@@ -18,7 +18,7 @@ import java.util.Date;
  * <strong> Zweck: </strong>  Koordination der verschiedenen Ansichten der Benutzeroberflaeche und Schnittstelle zur Verarbeitungsschicht
  * <h2>Aenderungshistorie:</h2>
  * <ol>
- * 	<li>
+ <li>
  * 		<ul>
  * 			<li> <strong> Version: </strong> 1.0 </li>
  *			<li> <strong> Datum: </strong> 06.08.16 </li>
@@ -28,10 +28,18 @@ import java.util.Date;
  *	</li>
  *	<li>
  *		<ul>
- *			<li> <strong> Version: </strong> 2.0 </li>
+ *			<li> <strong> Version: </strong> 1.2 </li>
  *			<li> <strong> Datum: </strong> 10.08.16 </li>
  *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Major Update </li>
+ * 			<li> <strong> Beschreibung: </strong> Design GUIFrame </li>
+ *		</ul>
+ *	</li>
+ *	<li>
+ *		<ul>
+ *			<li> <strong> Version: </strong> 2.0 </li>
+ *			<li> <strong> Datum: </strong> 11.08.16 </li>
+ *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
+ * 			<li> <strong> Beschreibung: </strong> Implementierung der Methoden </li>
  *		</ul>
  *	</li>
  *	<li>
@@ -39,7 +47,7 @@ import java.util.Date;
  *			<li> <strong> Version: </strong> 2.1 </li>
  *			<li> <strong> Datum: </strong> 11.08.16 </li>
  *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Bug Fixes </li>
+ * 			<li> <strong> Beschreibung: </strong> Überarbeitung der Methoden setAktuelleAnsicht(), reservieren() und bearbeiteNutzer() </li>
  *		</ul>
  *	</li>
  *	<li>
@@ -47,7 +55,7 @@ import java.util.Date;
  *			<li> <strong> Version: </strong> 2.2 </li>
  *			<li> <strong> Datum: </strong> 12.08.16 </li>
  *			<li> <strong> Autor: </strong> Hanna Behnke </li>
- * 			<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikationen </li>
+ * 			<li> <strong> Beschreibung: </strong> Kommentare/Unit-Spezifikation </li>
  *		</ul>
  *	</li>
  *	<li>
@@ -61,21 +69,13 @@ import java.util.Date;
  *	<li>
  *		<ul>
  *			<li> <strong> Version: </strong> 2.4 </li>
- *			<li> <strong> Datum: </strong> 13.08.16 </li>
- *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
- * 			<li> <strong> Beschreibung: </strong> Minor Bug Fixes </li>
- *		</ul>
- *	</li>
- *	<li>
- *		<ul>
- *			<li> <strong> Version: </strong> 2.5 </li>
  *			<li> <strong> Datum: </strong> 14.08.16 </li>
  *			<li> <strong> Autor: </strong> Alexander Reichenbach </li>
  * 			<li> <strong> Beschreibung: </strong> Sortierung im Raumfinder </li>
  *		</ul>
  *	</li>
  * </ol>
- * @version 2.5
+ * @version 2.4
  * @author Alexander Reichenbach
  *
  */
